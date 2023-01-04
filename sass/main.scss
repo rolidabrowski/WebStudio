@@ -1,0 +1,48 @@
+@use './utlis/vars' as *;
+@import './components/advantages';
+@import './components/button';
+@import './components/checkbox';
+@import './components/clients';
+@import './components/filter';
+@import './components/footer';
+@import './components/form';
+@import './components/header';
+@import './components/hero';
+@import './components/logo';
+@import './components/modal';
+@import './components/navigation';
+@import './components/newsletter';
+@import './components/offer';
+@import './components/products';
+@import './components/social';
+@import './components/team';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $defaultFontStyle;
+  background-color: $defaultBackgroundColor;
+  color: $defaultTextColor;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0;
+}

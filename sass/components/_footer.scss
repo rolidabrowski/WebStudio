@@ -1,0 +1,69 @@
+.footer {
+  background-color: $additionalBackgroundColor;
+  padding: 60px 0;
+
+  .footer__container {
+    @extend .container;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 246px;
+    margin-top: 20px;
+  }
+
+  .footer__item {
+    height: 21px;
+  }
+
+  .footer__link {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+
+  .footer__link--white {
+    color: $defaultBackgroundColor;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  .footer__link--grey {
+    color: $footerLinkColor;
+    transition-property: color;
+    transition-duration: $duration;
+    transition-timing-function: $timingFunction;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  .footer__social {
+    display: block;
+    padding-top: 12px;
+  }
+
+  .footer__title {
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $defaultBackgroundColor;
+    margin-bottom: 20px;
+  }
+
+  .footer__newsletter {
+    display: block;
+    padding-top: 12px;
+  }
+}

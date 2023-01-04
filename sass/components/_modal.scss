@@ -1,0 +1,66 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  transform: scale(1);
+  width: 528px;
+  min-height: 581px;
+  background-color: $defaultBackgroundColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: $defaultBorderRadius;
+  transition-property: transform;
+  transition-duration: 1200ms;
+  transition-timing-function: $timingFunction;
+
+  .modal__form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .modal__title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $defaultBackgroundColor;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: $primaryColor;
+}

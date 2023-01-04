@@ -1,0 +1,17 @@
+.logo {
+  color: $primaryColor;
+  font-family: $optionalFontStyle;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.logo--footer {
+  color: $defaultBackgroundColor;
+}
+
+.logo--accent {
+  color: $accentColor;
+}

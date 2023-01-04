@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  .social__link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $defaultBackgroundColor;
+      background-color: $accentColor;
+      fill: $defaultBackgroundColor;
+    }
+  }
+
+  .social__link--team {
+    fill: $iconColor;
+    transition-property: background-color, border, fill;
+    transition-duration: $duration;
+    transition-timing-function: $timingFunction;
+  }
+
+  .social__link--footer {
+    background-color: $socialBackgroundColor;
+    fill: $defaultBackgroundColor;
+    transition-property: color, background-color;
+    transition-duration: $duration;
+    transition-timing-function: $timingFunction;
+  }
+}
