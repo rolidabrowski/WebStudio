@@ -50,7 +50,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 1.125rem;
-    line-height: 1.55;
+    line-height: 1.55rem;
     letter-spacing: 0.03em;
     color: $defaultBackgroundColor;
     padding: 49px 45px 49px 24px;
@@ -66,14 +66,14 @@
   .product__name {
     font-weight: 700;
     font-size: 1.125rem;
-    line-height: 2;
+    line-height: 2rem;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
   }
 
   .product__type {
     font-size: 1rem;
-    line-height: 1.9;
+    line-height: 1.9rem;
     letter-spacing: 0.03em;
     color: $secondaryColor;
   }
