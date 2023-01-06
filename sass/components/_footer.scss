@@ -3,25 +3,26 @@
   padding: 60px 0;
 
   .footer__container {
-    @extend .container;
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
   }
 
   .footer__list {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-    width: 246px;
     margin-top: 20px;
+    height: 79px;
   }
 
   .footer__item {
-    height: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .footer__link {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     line-height: 1.7rem;
     letter-spacing: 0.03em;
   }
@@ -48,22 +49,86 @@
   }
 
   .footer__social {
-    display: block;
-    padding-top: 12px;
+    height: 80px;
   }
 
   .footer__title {
     font-weight: 700;
     font-size: 0.875rem;
-    line-height: 1.15;
+    line-height: 1.15rem;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $defaultBackgroundColor;
     margin-bottom: 20px;
   }
-
-  .footer__newsletter {
-    display: block;
-    padding-top: 12px;
-  }
 }
+
+// .footer {
+//   background-color: $additionalBackgroundColor;
+//   padding: 60px 0;
+
+//   .footer__container {
+//     @extend .container;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   .footer__list {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 9px;
+//     width: 246px;
+//     margin-top: 20px;
+//   }
+
+//   .footer__item {
+//     height: 21px;
+//   }
+
+//   .footer__link {
+//     font-size: 0.875rem;
+//     line-height: 1.7rem;
+//     letter-spacing: 0.03em;
+//   }
+
+//   .footer__link--white {
+//     color: $defaultBackgroundColor;
+
+//     &:hover,
+//     &:focus {
+//       color: $accentColor;
+//     }
+//   }
+
+//   .footer__link--grey {
+//     color: $footerLinkColor;
+//     transition-property: color;
+//     transition-duration: $duration;
+//     transition-timing-function: $timingFunction;
+
+//     &:hover,
+//     &:focus {
+//       color: $accentColor;
+//     }
+//   }
+
+//   .footer__social {
+//     display: block;
+//     padding-top: 12px;
+//   }
+
+//   .footer__title {
+//     font-weight: 700;
+//     font-size: 0.875rem;
+//     line-height: 1.15;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: $defaultBackgroundColor;
+//     margin-bottom: 20px;
+//   }
+
+//   .footer__newsletter {
+//     display: block;
+//     padding-top: 12px;
+//   }
+// }

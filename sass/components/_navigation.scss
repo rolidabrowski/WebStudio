@@ -1,37 +1,37 @@
-.navigation__list {
-  display: flex;
-  gap: 46px;
-}
+// .navigation__list {
+//   display: flex;
+//   gap: 46px;
+// }
 
-.navigation__link {
-  display: block;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.15rem;
-  letter-spacing: 0.02em;
-  color: $defaultTextColor;
-  transition-property: color;
-  transition-duration: $duration;
-  transition-timing-function: $timingFunction;
+// .navigation__link {
+//   display: block;
+//   font-weight: 500;
+//   font-size: 0.875rem;
+//   line-height: 1.15rem;
+//   letter-spacing: 0.02em;
+//   color: $defaultTextColor;
+//   transition-property: color;
+//   transition-duration: $duration;
+//   transition-timing-function: $timingFunction;
 
-  &:hover,
-  &:focus {
-    color: $accentColor;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: $accentColor;
+//   }
+// }
 
-.navigation__link--active {
-  position: relative;
-  color: $accentColor;
+// .navigation__link--active {
+//   position: relative;
+//   color: $accentColor;
 
-  &::after {
-    content: '';
-    display: block;
-    top: 44px;
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    background: $accentColor;
-    border-radius: 2px;
-  }
-}
+//   &::after {
+//     content: '';
+//     display: block;
+//     top: 44px;
+//     width: 100%;
+//     height: 4px;
+//     position: absolute;
+//     background: $accentColor;
+//     border-radius: 2px;
+//   }
+// }

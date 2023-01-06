@@ -1,61 +1,61 @@
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+// .form {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 10px;
 
-  .form__input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    font-size: 0.75rem;
-    line-height: 1.15rem;
-    letter-spacing: 0.01em;
-    color: $secondaryColor;
-    position: relative;
-    transition-property: fill;
-    transition-duration: 100ms;
-    transition-timing-function: $timingFunction;
+//   .form__input-container {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 4px;
+//     font-size: 0.75rem;
+//     line-height: 1.15rem;
+//     letter-spacing: 0.01em;
+//     color: $secondaryColor;
+//     position: relative;
+//     transition-property: fill;
+//     transition-duration: 100ms;
+//     transition-timing-function: $timingFunction;
 
-    &:hover,
-    &:focus,
-    &:focus-within {
-      fill: $accentColor;
-    }
-  }
+//     &:hover,
+//     &:focus,
+//     &:focus-within {
+//       fill: $accentColor;
+//     }
+//   }
 
-  .form__input-container .form__input--container {
-    padding: 11px 12px;
-  }
+//   .form__input-container .form__input--container {
+//     padding: 11px 12px;
+//   }
 
-  .form__icon {
-    position: absolute;
-    bottom: 10px;
-    left: 12px;
-    width: 18px;
-    height: 18px;
-    transition-property: fill;
-    transition-duration: $duration;
-    transition-timing-function: $timingFunction;
-  }
+//   .form__icon {
+//     position: absolute;
+//     bottom: 10px;
+//     left: 12px;
+//     width: 18px;
+//     height: 18px;
+//     transition-property: fill;
+//     transition-duration: $duration;
+//     transition-timing-function: $timingFunction;
+//   }
 
-  .form__input {
-    width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: $defaultBorderRadius;
-    padding: 11px 42px;
-    outline: 0;
-    resize: none;
-    color: $secondaryColor;
-    transition-property: border-color;
-    transition-duration: $duration;
-    transition-timing-function: $timingFunction;
+//   .form__input {
+//     width: 448px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: $defaultBorderRadius;
+//     padding: 11px 42px;
+//     outline: 0;
+//     resize: none;
+//     color: $secondaryColor;
+//     transition-property: border-color;
+//     transition-duration: $duration;
+//     transition-timing-function: $timingFunction;
 
-    &:hover,
-    &:focus,
-    &:focus-within {
-      border-color: $accentColor;
-    }
-  }
-}
+//     &:hover,
+//     &:focus,
+//     &:focus-within {
+//       border-color: $accentColor;
+//     }
+//   }
+// }

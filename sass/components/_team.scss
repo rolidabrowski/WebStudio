@@ -1,27 +1,22 @@
 .team {
   background-color: $advantagesBackgroundColor;
-  align-items: center;
 
   .team__container {
-    @extend .container;
-    @extend .section;
-  }
-
-  .team__title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.03em;
-    display: block;
-    margin-bottom: 50px;
+    padding: 60px 15px;
   }
 
   .team__list {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     gap: 30px;
+  }
+
+  .team__title {
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
   }
 
   .team__card {
@@ -50,12 +45,80 @@
 
   .team__subtitle {
     font-size: 1rem;
-    line-height: 1.18rem;
+    line-height: 1.2rem;
     letter-spacing: 0.03em;
     color: $secondaryColor;
   }
 
   .team__social {
-    padding: 16px 0 30px 0;
+    padding: 16px 0 24px 0;
   }
 }
+
+// .team {
+//   background-color: $advantagesBackgroundColor;
+//   align-items: center;
+
+//   .team__container {
+//     @extend .container;
+//     @extend .section;
+//   }
+
+//   .team__title {
+//     text-align: center;
+//     font-weight: 700;
+//     font-size: 2.25rem;
+//     line-height: 1.2rem;
+//     letter-spacing: 0.03em;
+//     display: block;
+//     margin-bottom: 50px;
+//   }
+
+//   .team__list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 30px;
+//   }
+
+//   .team__card {
+//     background-color: $defaultBackgroundColor;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+
+//   .team__img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+//   }
+
+//   .team__header {
+//     display: block;
+//     text-align: center;
+//     padding-top: 30px;
+//   }
+
+//   .team__name {
+//     font-weight: 500;
+//     font-size: 1rem;
+//     line-height: 1.2rem;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 10px;
+//   }
+
+//   .team__subtitle {
+//     font-size: 1rem;
+//     line-height: 1.18rem;
+//     letter-spacing: 0.03em;
+//     color: $secondaryColor;
+//   }
+
+//   .team__social {
+//     padding: 16px 0 30px 0;
+//   }
+// }

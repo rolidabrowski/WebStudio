@@ -1,12 +1,12 @@
 .newsletter {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 20px;
 
   .newsletter__group {
     height: 50px;
     position: relative;
-    margin-right: 12px;
   }
 
   .newsletter__input {
@@ -14,7 +14,7 @@
     border-radius: $defaultBorderRadius;
     border: 1px solid $newsletterBorderColor;
     color: $newsletterTextColor;
-    width: 358px;
+    width: 450px;
     padding: 15px 16px;
     outline: 0;
     transition-property: border-color;
