@@ -1,5 +1,10 @@
-.advantages__list {
-  padding: 60px 15px;
+.advantages {
+  @extend .container;
+  max-width: 480px;
+
+  .advantages__list {
+    padding: 60px 0;
+  }
 
   .advantages__icon {
     background-color: $advantagesBackgroundColor;

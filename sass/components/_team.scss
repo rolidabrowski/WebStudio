@@ -1,12 +1,14 @@
 .team {
   background-color: $advantagesBackgroundColor;
+  @extend .container;
 
   .team__container {
-    padding: 60px 15px;
+    padding: 60px 0;
   }
 
   .team__list {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 30px;
   }
