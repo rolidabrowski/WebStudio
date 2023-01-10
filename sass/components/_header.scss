@@ -10,9 +10,56 @@
     justify-content: space-between;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .header__contact {
       display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    .header__container {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header__contact {
+      display: block;
+    }
+
+    .header__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .header__link {
+      display: block;
+      font-weight: 500;
+      font-size: 0.75rem;
+      line-height: 0.875rem;
+      letter-spacing: 0.02em;
+      color: $secondaryColor;
+      fill: $secondaryColor;
+      transition-property: color, fill;
+      transition-duration: $duration;
+      transition-timing-function: $timingFunction;
+
+      &:hover,
+      &:focus {
+        color: $accentColor;
+        fill: $accentColor;
+      }
+    }
+
+    .header__link--start {
+      margin-left: 2px;
+    }
+
+    .header__icon {
+      margin-right: 7px;
+      vertical-align: text-top;
     }
   }
 }
