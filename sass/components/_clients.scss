@@ -1,5 +1,10 @@
 .clients {
-  padding: 60px 15px;
+  @extend .container;
+  max-width: 480px;
+
+  .clients__container {
+    padding: 60px 0;
+  }
 
   .clients__title {
     text-align: center;
@@ -9,9 +14,8 @@
     margin-bottom: 30px;
   }
 
-  .clients__container {
+  .clients__list {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
@@ -36,42 +40,31 @@
   }
 }
 
-// .clients {
-//   @extend .container;
-//   @extend .section;
+@media (min-width: 768px) {
+  .clients {
+    max-width: 768px;
 
-//   .clients__title {
-//     font-weight: 700;
-//     font-size: 2.25rem;
-//     line-height: 1.2rem;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     display: block;
-//     margin-bottom: 50px;
-//   }
+    .clients__link {
+      padding: 13px 59px;
+    }
+  }
+}
 
-//   .clients__container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 30px;
-//   }
+@media (min-width: 1200px) {
+  .clients {
+    max-width: 1200px;
 
-//   .clients__link {
-//     border: 1px solid $iconColor;
-//     border-radius: $defaultBorderRadius;
-//     padding: 16px 32px;
-//     cursor: pointer;
-//     fill: $iconColor;
-//     transition-property: fill, border, border-radius;
-//     transition-duration: $duration;
-//     transition-timing-function: $timingFunction;
+    .clients__title {
+      font-size: 2.25rem;
+      line-height: 2.6rem;
+    }
 
-//     &:hover,
-//     &:focus {
-//       fill: $accentColor;
-//       border: 1px solid $accentColor;
-//       border-radius: $defaultBorderRadius;
-//     }
-//   }
-// }
+    .clients__container {
+      padding: 94px 0;
+    }
+
+    .clients__link {
+      padding: 16px 31px;
+    }
+  }
+}

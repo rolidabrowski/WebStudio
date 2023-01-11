@@ -1,5 +1,8 @@
-.team {
+.team-bg {
   background-color: $advantagesBackgroundColor;
+}
+
+.team {
   @extend .container;
 
   .team__container {
@@ -8,13 +11,15 @@
 
   .team__list {
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
   .team__title {
     text-align: center;
+    font-weight: 700;
     font-size: 1.75rem;
     line-height: 2rem;
     letter-spacing: 0.03em;
@@ -54,6 +59,27 @@
 
   .team__social {
     padding: 16px 0 24px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .team {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team {
+    max-width: 1200px;
+
+    .team__container {
+      padding: 94px 0;
+    }
+
+    .team__title {
+      font-size: 2.25rem;
+      line-height: 2.6rem;
+    }
   }
 }
 

@@ -1,10 +1,15 @@
-.footer {
+.footer-bg {
   background-color: $additionalBackgroundColor;
-  padding: 60px 0;
+}
+
+.footer {
+  @extend .container;
 
   .footer__container {
+    padding: 60px 0;
     text-align: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 60px;
@@ -22,7 +27,8 @@
   }
 
   .footer__link {
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 0.875rem;
     line-height: 1.7rem;
     letter-spacing: 0.03em;
   }
@@ -60,6 +66,53 @@
     text-transform: uppercase;
     color: $defaultBackgroundColor;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+
+    .footer__container {
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    max-width: 1200px;
+
+    .footer__container {
+      text-align: left;
+      display: flex;
+    }
+
+    .footer__list {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      width: 246px;
+    }
+
+    .footer__item {
+      height: 21px;
+    }
+
+    .footer__link {
+      line-height: 1.5rem;
+    }
+
+    .footer__social {
+      padding-top: 0;
+    }
+
+    .footer__newsletter {
+      display: block;
+      padding-top: 12px;
+    }
   }
 }
 

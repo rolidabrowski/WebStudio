@@ -78,3 +78,12 @@
     width: 50px;
   }
 }
+
+@media (min-width: 1200px) {
+  .newsletter {
+    flex-direction: row;
+    .newsletter__input {
+      width: 358px;
+    }
+  }
+}
