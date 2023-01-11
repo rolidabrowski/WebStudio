@@ -1,6 +1,9 @@
+.header-line {
+  border-bottom: 1px solid $headerLineColor;
+}
+
 .header {
   @extend .container;
-  border-bottom: 1px solid $headerLineColor;
 
   .header__container {
     padding: 16px 0;

@@ -63,3 +63,9 @@
   cursor: pointer;
   fill: $primaryColor;
 }
+
+@media (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
+}

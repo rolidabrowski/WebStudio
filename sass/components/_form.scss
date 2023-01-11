@@ -60,3 +60,11 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .form {
+    .form__input {
+      width: 448px;
+    }
+  }
+}
