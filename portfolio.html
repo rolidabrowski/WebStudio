@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <title>WebStudio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -19,6 +13,12 @@
       referrerpolicy="no-referrer"
     />
     <link href="css/main.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header-line">
@@ -71,7 +71,7 @@
       </section>
     </header>
     <main>
-      <section class="container section">
+      <section class="product-section">
         <nav class="filter">
           <ul class="filter__list">
             <li class="filter__item">
@@ -392,5 +392,58 @@
         </div>
       </section>
     </footer>
+    <div class="mobile menu-container js-menu-container" id="mobile-menu">
+      <button class="close-toggle js-close-menu">
+        <svg width="19" height="19">
+          <use href="./images/icons.svg#icon-menuclose"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./index.html">Agencja</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+          </li>
+          <li class="contact-list__item">
+            <a class="contact-list__link contact-list__link--style" href="tel:+48111111111">
+              +48 111 111 111
+            </a>
+          </li>
+        </ul>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" target="_blank">Instagram</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" target="_blank">Twitter</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" target="_blank">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#" target="_blank">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

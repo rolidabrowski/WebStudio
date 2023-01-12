@@ -1,8 +1,12 @@
+.product-section {
+  padding: 94px 15px;
+}
+
 .product {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0 15px;
 
   .product__card {
     background: $defaultBackgroundColor;
