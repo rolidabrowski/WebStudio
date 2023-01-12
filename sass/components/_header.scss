@@ -4,6 +4,7 @@
 
 .header {
   @extend .container;
+  max-width: 480px;
 
   .header__container {
     padding: 16px 0;

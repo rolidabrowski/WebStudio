@@ -9,6 +9,9 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  transform: fill;
+  transition-property: $duration;
+  transition-timing-function: $timingFunction;
 
   &:hover,
   &:focus {
@@ -16,9 +19,27 @@
   }
 }
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
+.close-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  transform: fill;
+  transition-property: $duration;
+  transition-timing-function: $timingFunction;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
   }
 }
 
@@ -37,12 +58,6 @@
 
 .menu-container.is-open {
   transform: translateX(0);
-}
-
-.menu-toggle {
-  position: absolute;
-  top: 10px;
-  right: 15px;
 }
 
 .mobile {
@@ -109,5 +124,11 @@
     line-height: 1.4rem;
     letter-spacing: 0.02em;
     color: $accentColor;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
 }
