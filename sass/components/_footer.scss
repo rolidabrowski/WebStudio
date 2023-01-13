@@ -4,6 +4,7 @@
 
 .footer {
   @extend .container;
+  max-width: 480px;
 
   .footer__container {
     padding: 60px 0;
@@ -67,6 +68,10 @@
     color: $defaultBackgroundColor;
     margin-bottom: 20px;
   }
+
+  .footer__newsletter {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -95,6 +100,7 @@
     .footer__container {
       text-align: left;
       display: flex;
+      justify-content: space-between;
     }
 
     .footer_address {
@@ -122,7 +128,7 @@
     }
 
     .footer__newsletter {
-      display: block;
+      width: fit-content;
       padding-top: 12px;
     }
   }

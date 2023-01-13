@@ -35,7 +35,7 @@
     &::after {
       content: '';
       display: block;
-      top: 46px;
+      top: 47px;
       width: 100%;
       height: 4px;
       position: absolute;
@@ -48,5 +48,11 @@
 @media (min-width: 1200px) {
   .navigation__list {
     gap: 46px;
+  }
+
+  .navigation__link--active {
+    &::after {
+      top: 46px;
+    }
   }
 }

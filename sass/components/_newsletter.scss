@@ -5,6 +5,8 @@
   gap: 20px;
 
   .newsletter__group {
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     position: relative;
   }
@@ -14,7 +16,7 @@
     border-radius: $defaultBorderRadius;
     border: 1px solid $newsletterBorderColor;
     color: $newsletterTextColor;
-    width: 450px;
+    width: 100%;
     padding: 15px 16px;
     outline: 0;
     transition-property: border-color;
@@ -82,7 +84,8 @@
 @media (min-width: 1200px) {
   .newsletter {
     flex-direction: row;
-    .newsletter__input {
+
+    .newsletter__group {
       width: 358px;
     }
   }

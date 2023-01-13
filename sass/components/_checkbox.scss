@@ -1,5 +1,6 @@
 .custom-checkbox {
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
   padding-left: 24px;
   margin-top: 8px;
   margin-bottom: 18px;
@@ -53,7 +54,7 @@
 
 @media (min-width: 1200px) {
   .custom-checkbox {
-    width: 420px;
+    max-width: 420px;
     font-size: 0.875rem;
     line-height: 1.75rem;
   }
