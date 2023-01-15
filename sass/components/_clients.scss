@@ -1,9 +1,8 @@
 .clients {
-  @extend .container;
-  max-width: 480px;
-
   .clients__container {
-    padding: 60px 0;
+    @extend .container;
+    max-width: 480px;
+    padding: 60px 15px;
   }
 
   .clients__title {
@@ -42,7 +41,9 @@
 
 @media (min-width: 768px) {
   .clients {
-    max-width: 768px;
+    .clients__container {
+      max-width: 768px;
+    }
 
     .clients__link {
       padding: 13px 59px;
@@ -52,7 +53,9 @@
 
 @media (min-width: 1200px) {
   .clients {
-    max-width: 1200px;
+    .clients__container {
+      max-width: 1200px;
+    }
 
     .clients__title {
       font-size: 2.25rem;
@@ -60,7 +63,7 @@
     }
 
     .clients__container {
-      padding: 94px 0;
+      padding: 94px 15px;
     }
 
     .clients__link {

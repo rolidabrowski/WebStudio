@@ -1,13 +1,10 @@
-.footer-bg {
-  background-color: $additionalBackgroundColor;
-}
-
 .footer {
-  @extend .container;
-  max-width: 480px;
+  background-color: $additionalBackgroundColor;
 
   .footer__container {
-    padding: 60px 0;
+    @extend .container;
+    max-width: 480px;
+    padding: 60px 15px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -76,9 +73,8 @@
 
 @media (min-width: 768px) {
   .footer {
-    max-width: 768px;
-
     .footer__container {
+      max-width: 768px;
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -95,9 +91,8 @@
 
 @media (min-width: 1200px) {
   .footer {
-    max-width: 1200px;
-
     .footer__container {
+      max-width: 1200px;
       text-align: left;
       display: flex;
       justify-content: space-between;

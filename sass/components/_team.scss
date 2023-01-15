@@ -1,13 +1,10 @@
-.team-bg {
-  background-color: $advantagesBackgroundColor;
-}
-
 .team {
-  @extend .container;
-  max-width: 480px;
+  background-color: $advantagesBackgroundColor;
 
   .team__container {
-    padding: 60px 0;
+    @extend .container;
+    max-width: 480px;
+    padding: 60px 15px;
   }
 
   .team__title {
@@ -70,7 +67,9 @@
 
 @media (min-width: 768px) {
   .team {
-    max-width: 768px;
+    .team__container {
+      max-width: 768px;
+    }
 
     .team__card {
       width: 354px;
@@ -80,10 +79,9 @@
 
 @media (min-width: 1200px) {
   .team {
-    max-width: 1200px;
-
     .team__container {
-      padding: 94px 0;
+      max-width: 1200px;
+      padding: 94px 15px;
     }
 
     .team__title {
