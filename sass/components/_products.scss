@@ -1,12 +1,12 @@
-.product-section {
-  padding: 94px 15px;
-}
-
 .product {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
+  padding: 94px 15px;
+
+  .product__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
   .product__card {
     background: $defaultBackgroundColor;
@@ -26,7 +26,7 @@
     }
   }
 
-  .product__container {
+  .product__box {
     position: relative;
     width: 370px;
     height: 294px;
@@ -34,7 +34,6 @@
   }
 
   .product__img {
-    vertical-align: middle;
     display: block;
     max-width: 100%;
     height: auto;
