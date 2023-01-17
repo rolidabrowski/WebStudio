@@ -1,12 +1,21 @@
 .filter {
+  margin-bottom: 40px;
   .filter__list {
+    @extend .container;
+    max-width: 392px;
+    height: 91px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 34px;
+  }
+
+  .filter__item {
+    flex-basis: calc((100% - 16px) / 3);
   }
 
   .filter__btn {
+    width: 100%;
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.6rem;
@@ -16,7 +25,7 @@
     cursor: pointer;
     border-radius: $defaultBorderRadius;
     border-style: none;
-    padding: 6px 22px;
+    padding: 6px 0;
     transition-property: background-color, color, box-shadow, border-radius;
     transition-duration: $duration;
     transition-timing-function: $timingFunction;
@@ -31,3 +40,52 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+
+    .filter__list {
+      max-width: 645px;
+      height: 54px;
+    }
+
+    .filter__item {
+      flex-basis: calc((100% - 32px) / 5);
+    }
+  }
+}
+
+// .filter {
+//   .filter__list {
+//     display: flex;
+//     justify-content: center;
+//     gap: 8px;
+//     margin-bottom: 34px;
+//   }
+
+//   .filter__btn {
+//     font-weight: 500;
+//     font-size: 1rem;
+//     line-height: 1.6rem;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     background-color: $advantagesBackgroundColor;
+//     cursor: pointer;
+//     border-radius: $defaultBorderRadius;
+//     border-style: none;
+//     padding: 6px 22px;
+//     transition-property: background-color, color, box-shadow, border-radius;
+//     transition-duration: $duration;
+//     transition-timing-function: $timingFunction;
+
+//     &:hover,
+//     &:focus {
+//       background-color: $accentColor;
+//       color: $defaultBackgroundColor;
+//       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//         0px 2px 2px rgba(0, 0, 0, 0.12);
+//       border-radius: $defaultBorderRadius;
+//     }
+//   }
+// }

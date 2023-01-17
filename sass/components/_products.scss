@@ -1,9 +1,12 @@
 .product {
-  padding: 94px 15px;
+  @extend .container;
+  padding: 60px 15px;
+  max-width: 480px;
 
   .product__container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -28,15 +31,13 @@
 
   .product__box {
     position: relative;
-    width: 370px;
-    height: 294px;
+    width: 100%;
     overflow: hidden;
   }
 
   .product__img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    vertical-align: middle;
+    width: 100%;
   }
 
   .product__overlay {
@@ -84,3 +85,96 @@
     color: $secondaryColor;
   }
 }
+
+@media (min-width: 768px) {
+  .product {
+    max-width: 768px;
+  }
+}
+
+// .product {
+//   padding: 94px 15px;
+
+//   .product__container {
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     gap: 30px;
+//   }
+
+//   .product__card {
+//     background: $defaultBackgroundColor;
+//     cursor: pointer;
+//     transition-property: box-shadow;
+//     transition-duration: $duration;
+//     transition-timing-function: $timingFunction;
+
+//     &:hover,
+//     &:focus {
+//       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//         1px 4px 6px rgba(0, 0, 0, 0.16);
+//     }
+
+//     &:hover .product__overlay {
+//       transform: translatey(0);
+//     }
+//   }
+
+//   .product__box {
+//     position: relative;
+//     width: 370px;
+//     height: 294px;
+//     overflow: hidden;
+//   }
+
+//   .product__img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+//   }
+
+//   .product__overlay {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: $productBackgroundColor;
+//     transform: translatey(101%);
+//     transition-property: transform;
+//     transition-duration: $duration;
+//     transition-timing-function: $timingFunction;
+//   }
+
+//   .product__description {
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 1.125rem;
+//     line-height: 1.55rem;
+//     letter-spacing: 0.03em;
+//     color: $defaultBackgroundColor;
+//     padding: 49px 45px 49px 24px;
+//   }
+
+//   .product__title {
+//     display: block;
+//     padding: 20px 24px;
+//     border: 1px solid rgb(238, 238, 238);
+//     border-top: transparent;
+//   }
+
+//   .product__name {
+//     font-weight: 700;
+//     font-size: 1.125rem;
+//     line-height: 2rem;
+//     letter-spacing: 0.06em;
+//     margin-bottom: 4px;
+//   }
+
+//   .product__type {
+//     font-size: 1rem;
+//     line-height: 1.9rem;
+//     letter-spacing: 0.03em;
+//     color: $secondaryColor;
+//   }
+// }
