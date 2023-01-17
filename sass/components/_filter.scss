@@ -1,5 +1,6 @@
 .filter {
   margin-bottom: 40px;
+
   .filter__list {
     @extend .container;
     max-width: 392px;
@@ -56,36 +57,15 @@
   }
 }
 
-// .filter {
-//   .filter__list {
-//     display: flex;
-//     justify-content: center;
-//     gap: 8px;
-//     margin-bottom: 34px;
-//   }
+@media (min-width: 1200px) {
+  .filter {
+    .filter__list {
+      max-width: 572px;
+      flex-wrap: nowrap;
+    }
 
-//   .filter__btn {
-//     font-weight: 500;
-//     font-size: 1rem;
-//     line-height: 1.6rem;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     background-color: $advantagesBackgroundColor;
-//     cursor: pointer;
-//     border-radius: $defaultBorderRadius;
-//     border-style: none;
-//     padding: 6px 22px;
-//     transition-property: background-color, color, box-shadow, border-radius;
-//     transition-duration: $duration;
-//     transition-timing-function: $timingFunction;
-
-//     &:hover,
-//     &:focus {
-//       background-color: $accentColor;
-//       color: $defaultBackgroundColor;
-//       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//         0px 2px 2px rgba(0, 0, 0, 0.12);
-//       border-radius: $defaultBorderRadius;
-//     }
-//   }
-// }
+    .filter__btn {
+      padding: 6px 22px;
+    }
+  }
+}
