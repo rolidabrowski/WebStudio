@@ -36,7 +36,7 @@
   .product__img {
     vertical-align: middle;
     width: 100%;
-    height: 294px;
+    height: auto;
   }
 
   .product__overlay {
@@ -93,10 +93,6 @@
       width: 354px;
     }
 
-    .product__img {
-      width: 100%;
-    }
-
     .product__description {
       padding: 49px 24px;
     }
@@ -114,10 +110,6 @@
 
     .product__card {
       width: 370px;
-    }
-
-    .product__img {
-      width: 100%;
     }
 
     .product__title--padding {
