@@ -1,1 +1,1 @@
-https://rolidabrowski.github.io/goit-markup-hw-08/
+https://rolidabrowski.github.io/WebStudio/
